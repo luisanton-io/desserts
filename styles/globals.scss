@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Changa+One&family=Modak&family=Spicy+Rice&family=Zen+Tokyo+Zoo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Changa+One&family=Modak&family=Spicy+Rice&family=Zen+Tokyo+Zoo&display=swap");
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-    Helvetica Neue, sans-serif;
+  font-family: "Be Vietnam Pro", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -19,6 +19,12 @@ a {
 
 #__next {
   min-height: 100vh;
+  @media (min-width: 576px) {
+    overflow: hidden;
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 h1 {
@@ -28,4 +34,48 @@ h1 {
 
 body {
   background: linear-gradient(292.42deg, #d66d75 0%, #e29587 99.63%);
+}
+
+#dessert-icons {
+  #dessert-header {
+    margin-top: 3em;
+    display: flex;
+
+    h1 {
+      font-size: 3em;
+      @media (min-width: 768px) {
+        font-size: 8em;
+      }
+    }
+  }
+
+  img.filtered {
+    filter: grayscale(100%) blur(4px);
+    opacity: 0.6;
+    @media (min-width: 576px) {
+      filter: grayscale(100%) blur(8px);
+    }
+  }
+}
+#search-panel {
+  position: relative;
+  input {
+    margin: 1.5em 0;
+    border-width: 3px;
+    border-radius: 12px;
+    &::placeholder {
+      color: white;
+      text-align: center;
+    }
+  }
+}
+
+#desktop-cart {
+  background: linear-gradient(108.17deg, #f0f0f0 4.75%, #ffc3b8 95.47%);
+  border-radius: 48px;
+
+  min-height: 30vh;
+  position: absolute;
+  inset: auto 0 0 0;
+  transform: translateY(50%);
 }

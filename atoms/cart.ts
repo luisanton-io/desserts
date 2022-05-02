@@ -1,9 +1,17 @@
 import { atom } from "recoil";
 import { Cart } from "../interfaces";
 
-const cartState = atom<Cart>({
-    default: [],
+interface CartState {
+    cart: Cart
+    show: boolean
+}
+
+const cartAtom = atom<CartState>({
+    default: {
+        cart: [],
+        show: false
+    },
     key: "cart"
 })
 
-export default cartState
+export default cartAtom
