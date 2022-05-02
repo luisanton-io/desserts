@@ -1,7 +1,7 @@
 import { Badge, Button, Container } from "react-bootstrap";
 import { useRecoilState } from "recoil";
 import cartAtom from "../atoms/cart";
-import { CartOutline } from 'react-ionicons'
+import CartIcon from "./CartIcon";
 
 export default function DessertHeader() {
 
@@ -27,7 +27,7 @@ export default function DessertHeader() {
             className="d-sm-none d-flex align-self-center align-items-center px-3 py-2"
             onClick={displayCart}
         >
-            <CartOutline color="#fff" />
+            <CartIcon />
 
             <span className="ms-2">{items}</span>
         </Badge>

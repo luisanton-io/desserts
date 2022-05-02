@@ -27,12 +27,12 @@ export default function DessertModal() {
                             <PolarAngleAxis dataKey="stat" />
                             <PolarRadiusAxis />
                             <Radar name="dessert" dataKey="value" stroke="#8884d8" fill="#8884d8" fillOpacity={0.6} >
-                                {
+                                {/* {
                                     data.map((entry, index) => {
                                         console.table({ entry, index, fill: entry.value / entry.fullMark })
                                         return <Cell key={`cell-${index}`} domain={[0, entry.fullMark]} fill={`${entry.value / entry.fullMark}`} />
                                     })
-                                }
+                                } */}
                             </Radar>
                         </RadarChart>
                     </ResponsiveContainer>
