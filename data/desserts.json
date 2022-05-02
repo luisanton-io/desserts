@@ -1,0 +1,134 @@
+[
+    {
+        "filename": "carrot-cake",
+        "label": "Carrot Cake",
+        "stats": {
+            "popularity": 5,
+            "price": 30,
+            "easyToCook": 7,
+            "calories": 415,
+            "sweetness": 5
+        }
+    },
+    {
+        "filename": "chantilly-cupcake",
+        "label": "Chantilly Cupcake",
+        "stats": {
+            "popularity": 5,
+            "price": 20,
+            "easyToCook": 6,
+            "calories": 270,
+            "sweetness": 7
+        }
+    },
+    {
+        "filename": "chocolate-squares",
+        "label": "Chocolate Squares",
+        "stats": {
+            "popularity": 7,
+            "price": 16,
+            "easyToCook": 2,
+            "calories": 130,
+            "sweetness": 7
+        }
+    },
+    {
+        "filename": "creme-caramel",
+        "label": "Creme Caramel",
+        "stats": {
+            "popularity": 6,
+            "price": 20,
+            "easyToCook": 8,
+            "calories": 146,
+            "sweetness": 9
+        }
+    },
+    {
+        "filename": "french-macaron",
+        "label": "French Macaron",
+        "stats": {
+            "popularity": 4,
+            "price": 20,
+            "easyToCook": 8,
+            "calories": 80,
+            "sweetness": 9
+        }
+    },
+    {
+        "filename": "fruit-cake",
+        "label": "Fruit Cake",
+        "stats": {
+            "popularity": 8,
+            "price": 40,
+            "easyToCook": 7,
+            "calories": 324,
+            "sweetness": 7
+        }
+    },
+    {
+        "filename": "ice-cream-cone",
+        "label": "Ice Cream Cone",
+        "stats": {
+            "popularity": 10,
+            "price": 30,
+            "easyToCook": 3,
+            "calories": 207,
+            "sweetness": 6
+        }
+    },
+    {
+        "filename": "ice-cream-glass",
+        "label": "Ice Cream Glass",
+        "stats": {
+            "popularity": 9,
+            "price": 35,
+            "easyToCook": 3,
+            "calories": 220,
+            "sweetness": 6
+        }
+    },
+    {
+        "filename": "strawberry-donut",
+        "label": "Strawberry Donut",
+        "stats": {
+            "popularity": 3,
+            "price": 10,
+            "easyToCook": 8,
+            "calories": 80,
+            "sweetness": 10
+        }
+    },
+    {
+        "filename": "swiss-roll",
+        "label": "Swiss Roll",
+        "stats": {
+            "popularity": 7,
+            "price": 20,
+            "easyToCook": 9,
+            "calories": 150,
+            "sweetness": 6
+        }
+    },
+    {
+        "filename": "vanilla-cupcake",
+        "label": "Vanilla Cupcake",
+        "stats": {
+            "popularity": 5,
+            "price": 20,
+            "easyToCook": 8,
+            "calories": 260,
+            "sweetness": 7
+        }
+    },
+    {
+        "filename": "vanilla-donut",
+        "label": "Vanilla Donut",
+        "stats": {
+            "popularity": 8,
+            "price": 10,
+            "easyToCook": 9,
+            "calories": 80,
+            "sweetness": 10
+        }
+    }
+]
