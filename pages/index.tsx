@@ -1,6 +1,5 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import DessertHeader from '../components/Main/Header'
 import Main from '../components/Main'
 import DessertCtx from '../context/dessertCtx'
 import { Dessert } from '../interfaces'
