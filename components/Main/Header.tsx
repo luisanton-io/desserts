@@ -1,7 +1,7 @@
 import { Badge, Button, Container } from "react-bootstrap";
 import { useRecoilState } from "recoil";
-import cartAtom from "../atoms/cart";
-import CartIcon from "./CartIcon";
+import cartAtom from "../../atoms/cart";
+import CartIcon from "../Cart/Icon";
 
 export default function DessertHeader() {
 
@@ -19,7 +19,7 @@ export default function DessertHeader() {
     const items = cartState.cart.reduce((a, c) => a + c[1], 0)
 
     return <Container id="dessert-header" className="px-4">
-        <h1 className="ms-0 ms-sm-auto me-auto me-sm-3">desserts.</h1>
+        <h1 className="light-color ms-0 ms-sm-auto me-auto me-sm-3">desserts.</h1>
 
 
         <Badge pill bg="dark"

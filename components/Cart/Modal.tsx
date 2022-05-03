@@ -1,7 +1,7 @@
 import { Container, Modal, Row } from "react-bootstrap"
 import { useRecoilState } from "recoil"
-import cartAtom from "../atoms/cart"
-import CartContent from "./CartContent"
+import cartAtom from "../../atoms/cart"
+import CartContent from "./Content"
 
 export default function CartModal() {
     const [{ show }, setCartState] = useRecoilState(cartAtom)

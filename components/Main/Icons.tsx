@@ -1,11 +1,13 @@
 import { useContext } from "react"
 import { Col, Image, Row } from "react-bootstrap"
 import { useRecoilState, useRecoilValue } from "recoil"
-import dessertDetailAtom from "../atoms/detail"
-import queryAtom from "../atoms/query"
-import DessertCtx from "../context/dessertCtx"
-import { Dessert } from "../interfaces"
-import DessertHeader from "./DessertHeader"
+import dessertDetailAtom from "../../atoms/detail"
+import queryAtom from "../../atoms/query"
+import DessertCtx from "../../context/dessertCtx"
+import { Dessert } from "../../interfaces"
+import { hoverMatch } from "../../utils/hoverMatch"
+import { queryMatch } from "../../utils/queryMatch"
+import DessertHeader from "./Header"
 
 export default function DessertIcons() {
 
@@ -13,7 +15,6 @@ export default function DessertIcons() {
 
     const query = useRecoilValue(queryAtom)
 
-    const queryMatch = (label: string) => label.toLocaleLowerCase().includes(query.toLocaleLowerCase())
 
     const [dessertDetail, setDessertDetail] = useRecoilState(dessertDetailAtom)
 
@@ -21,12 +22,12 @@ export default function DessertIcons() {
         setDessertDetail(dessert)
     }
 
-    return <Col xs={12} sm={8} id="dessert-icons">
+    return <Col xs={12} sm={8} id="dessert-icons" data-query={query.length > 1 && desserts.some(dessert => queryMatch(dessert.label, query))}>
         <DessertHeader />
         <Row>
             {desserts.map((dessert, i) => {
                 const uri = `/assets/${dessert.filename}.png`
-                const match = queryMatch(dessert.label)
+                const match = queryMatch(dessert.label, query)
 
                 // console.table({
                 //     label: dessert.label, match: queryMatch(dessert.label),
@@ -35,7 +36,7 @@ export default function DessertIcons() {
                     onClick={() => match && handleDisplayDessert(dessert)}
                     key={`dessert-${i}`}
                 >
-                    <Image className={`p-3 ${!match ? "filtered" : ""}`} fluid src={uri} />
+                    <Image className={`p-3 ${!match ? "filtered" : ""} ${hoverMatch(dessert) ? "hovered" : ""}`} fluid src={uri} />
                     <span style={{ fontSize: '0.7em' }} className={`d-block text-center ${match ? "text-white" : "invisible"}`}>{dessert.label}</span>
                 </Col>
             })}
