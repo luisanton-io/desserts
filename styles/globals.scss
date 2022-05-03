@@ -179,16 +179,17 @@ h1 {
   max-height: 40vh;
 }
 
-button.btn-tint {
+button.btn-tint,
+input.btn-tint {
   border: none;
   background-color: $dark !important;
   color: white !important;
   &[disabled] {
-    filter: grayscale(100%) opacity(0.6);
+    filter: grayscale(100%) opacity(0.6) !important;
   }
 
   &:hover,
   &:active {
-    background-color: darken($color: $dark, $amount: 10);
+    background-color: darken($color: $dark, $amount: 10) !important;
   }
 }
