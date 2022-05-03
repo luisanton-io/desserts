@@ -6,7 +6,7 @@ import SearchPanel from "../SearchPanel";
 
 export default function Main() {
     return (<>
-        <Container>
+        <Container id="main">
             <Row>
                 <SearchPanel />
                 <DessertIcons />
